@@ -1,16 +1,9 @@
-
-## CREATE STUDENT TABLE
-
 CREATE TABLE student (
     student_id NUMBER(5) PRIMARY KEY,
     student_name VARCHAR2(50),
     course VARCHAR2(30),
     marks NUMBER(5,2)
 );
-
-![OUTPUT](OP 1)
-
-## INSERT INTO STUDENT TABLE
 
 INSERT INTO student VALUES (101, 'Ravi', 'CSE', 85);
 INSERT INTO student VALUES (102, 'Sita', 'CSE', 92);
@@ -28,8 +21,6 @@ INSERT INTO student VALUES (113, 'Ramesh', 'IT', 72);
 INSERT INTO student VALUES (114, 'Swathi', 'EEE', 87);
 INSERT INTO student VALUES (115, 'Ajay', 'ECE', 93);
 COMMIT;
-
-![OUTPUT](OP 2)
 
 SELECT * FROM student;
 
@@ -62,23 +53,19 @@ BEGIN
     END LOOP;
 
     -- Check whether any record was found
+        IF v_found = FALSE THEN
+        RAISE e_no_first_class;
     END IF;
 
 EXCEPTION
+    -- Handle user-defined exception
     WHEN e_no_first_class THEN
         DBMS_OUTPUT.PUT_LINE('No First Class Students Found.');
+    
     -- Handle other unexpected exceptions
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
 END;
 
-![OUTPUT](OP 3)
-![OUTPUT](OP 4)
-
 UPDATE student set marks = 59;
-
-![OUTPUT](OP 5)
 SELECT * FROM student;
-
-![OUPUT](OP 6)
-![OUTPUT](OP 7)
