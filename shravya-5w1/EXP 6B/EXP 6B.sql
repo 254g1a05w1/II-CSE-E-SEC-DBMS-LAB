@@ -118,9 +118,3 @@ EXCEPTION
         );
 
 END;
-
-![OUTPUT](OP 1)
-![OUTPUT](OP 2)
-![OUTPUT](OP 3)
-![OUTPUT](OP 4)
-
