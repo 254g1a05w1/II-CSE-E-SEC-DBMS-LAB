@@ -65,42 +65,36 @@ BEGIN
             ELSE 'F'
         END;
 
+    
     DBMS_OUTPUT.PUT_LINE(
         'Grade stored in variable: ' || v_grade
     );
-
 
    
     v_nullif_result := NULLIF(v_test1, v_test2);
 
     IF v_nullif_result IS NULL THEN
-
         DBMS_OUTPUT.PUT_LINE(
             'NULLIF Result: NULL'
         );
-
     ELSE
         DBMS_OUTPUT.PUT_LINE(
             'NULLIF Result: ' || v_nullif_result
         );
     END IF;
 
-
    
     v_coalesce_result :=
         COALESCE(NULL, NULL, v_student_name, 'No Name');
 
     -- Display COALESCE result
-
     DBMS_OUTPUT.PUT_LINE(
         'COALESCE Result: ' || v_coalesce_result
     );
 
 EXCEPTION
-
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE(
             'Error: ' || SQLERRM
         );
 END;
- ![OUTPUT](OP 1)
