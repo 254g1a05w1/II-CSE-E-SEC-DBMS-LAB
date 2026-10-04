@@ -18,14 +18,10 @@ INSERT INTO EMPLOYEE VALUES (105, 'Rahul', 'CSE', 48000);
 SELECT * FROM EMPLOYEE;
 COMMIT;
 
-![OUTPUT](OP 10
-
 -- Step 4: Search without index
 SELECT *
 FROM EMPLOYEE
 WHERE EMP_NAME = 'Ravi';
-
-![OUTPUT](OP 2)
 
 -- Step 5: Display execution plan before indexing
 EXPLAIN PLAN FOR
@@ -35,8 +31,6 @@ WHERE EMP_NAME = 'Ravi';
 
 SELECT *
 FROM TABLE(DBMS_XPLAN.DISPLAY);
-
-![OUTPUT](OP 3)
 
 -- Step 6: Create index on search column
 CREATE INDEX EMP_NAME_INDEX
@@ -71,4 +65,3 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Non-indexed and indexed search operations completed successfully.');
 END;
 /
-![OUTPUT](OP 4)
