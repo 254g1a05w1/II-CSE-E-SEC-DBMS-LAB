@@ -47,13 +47,9 @@ BEGIN
 
 END;
 /
-
-![OUTPUT](OP 1)
 -- Display updated table
 SELECT EMPLOYEE_ID,
        EMPLOYEE_NAME,
        DEPARTMENT,
        SALARY
 FROM EMPLOYEE;
-
-![OUTPUT](OP 2)
