@@ -46,12 +46,9 @@ BEGIN
 END;
 /
 
-![OUTPUT](OP 1)
 -- Display updated BOOK table
 SELECT BOOK_ID,
        BOOK_TITLE,
        AUTHOR,
        AVAILABLE_COPIES
 FROM BOOK;
-
-![OUTPUT](OP 2)
