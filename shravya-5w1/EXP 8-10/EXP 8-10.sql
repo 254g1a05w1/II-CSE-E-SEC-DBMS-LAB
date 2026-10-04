@@ -112,27 +112,18 @@ BEGIN
     END LOOP;
 
     COMMIT;
-    DBMS_OUTPUT.PUT_LINE('----------------------');
 
+    DBMS_OUTPUT.PUT_LINE('----------------------');
     DBMS_OUTPUT.PUT_LINE('Scholarship status updated successfully.');
 
-
 END;
-
 /
 
-![OUTPUT](OP 1)
-
 -- Display final updated table
-
 SELECT STUDENT_ID,
-
        STUDENT_NAME,
        BRANCH,
        SEMESTER,
        CGPA,
        SCHOLARSHIP_STATUS
-
 FROM STUDENT;
-
-![OUTPUT](OP 2)
