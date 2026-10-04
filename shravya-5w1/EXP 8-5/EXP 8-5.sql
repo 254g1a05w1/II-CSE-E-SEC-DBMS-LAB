@@ -46,13 +46,9 @@ BEGIN
 END;
 /
 
-![OUTPUT](OP 1)
-
 -- Display updated PRODUCT table
 SELECT PRODUCT_ID,
        PRODUCT_NAME,
        PRICE,
        QUANTITY
 FROM PRODUCT;
-
-![OUTPUT](OP 2)
