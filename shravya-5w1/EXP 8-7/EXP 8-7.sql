@@ -62,4 +62,3 @@ BEGIN
 
 END;
 /
-![OUTPUT](OP 1)
