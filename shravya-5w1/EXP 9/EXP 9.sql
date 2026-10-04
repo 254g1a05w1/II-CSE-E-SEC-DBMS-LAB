@@ -61,12 +61,9 @@ EXCEPTION
 END;
 /
 
-![OUTPUT](OP 1)
-
 -- Step 5: Display table contents
 SELECT EMPLOYEE_ID,
        EMPLOYEE_NAME,
        DEPARTMENT,
        SALARY
 FROM EMPLOYEE;
-![OUTPUT](OP 2)
