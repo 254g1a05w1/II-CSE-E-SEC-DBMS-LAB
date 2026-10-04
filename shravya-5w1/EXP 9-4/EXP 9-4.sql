@@ -49,9 +49,6 @@ COMMIT;
 SELECT *
 FROM EMPLOYEE;
 
-![output](OP 1)
-
 -- Display DELETE LOG
 SELECT *
 FROM DELETE_LOG;
-![output](OP 2)
