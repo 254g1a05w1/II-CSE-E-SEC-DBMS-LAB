@@ -60,8 +60,6 @@ BEGIN
 END;
 /
 
-![OUTPUT](OP 1)
-
 DECLARE
     V_NAME  VARCHAR2(30);
     V_MARKS NUMBER(3);
@@ -77,5 +75,3 @@ BEGIN
     END IF;
 END;
 /
-
-[OUTPUT](OP 2)
