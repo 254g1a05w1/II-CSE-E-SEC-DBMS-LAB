@@ -52,9 +52,5 @@ COMMIT;
 -- Display main table
 SELECT * FROM EMPLOYEE;
 
-![OUTPUT](OP 1)
-
 -- Display audit table
 SELECT * FROM EMPLOYEE_AUDIT;
-
-![OUTPUT](OP 2)
