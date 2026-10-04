@@ -1,4 +1,3 @@
-
 SET SERVEROUTPUT ON;
 
 -- Create STUDENT table
@@ -63,4 +62,3 @@ BEGIN
 
 END;
 /
-![OUTPUT](OP 1)
