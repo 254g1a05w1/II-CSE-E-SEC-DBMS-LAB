@@ -49,12 +49,9 @@ WHERE EMPLOYEE_ID = 101;
 
 COMMIT;
 
-![output](OP 1)
-
 -- Display base table
 SELECT EMPLOYEE_ID,
        EMPLOYEE_NAME,
        DEPARTMENT,
        SALARY
 FROM EMPLOYEE;
-![output](OP 2)
