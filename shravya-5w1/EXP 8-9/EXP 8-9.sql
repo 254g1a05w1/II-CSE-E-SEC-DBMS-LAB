@@ -63,19 +63,12 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Salary updated successfully.');
 
 END;
-
 /
 
-![OUTPUT](OP 1)
-
 -- Display updated EMPLOYEE table
-
 SELECT EMPLOYEE_ID,
-
        EMPLOYEE_NAME,
        DEPARTMENT,
        SALARY,
        EXPERIENCE
 FROM EMPLOYEE;
-
-![OUTPUT](OP 2)
